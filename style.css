@@ -1,26 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: poppins;
-}
-/* ==========================Font========================== */
-
-@font-face {
-    font-family: "poppins";
-    src: url(../fonts/roboto-regular-webfont.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", "robotoregular", sans-serif;
 }
+
+
+/* ==========================Font========================== */
+
+@font-face {
+    font-family: "poppins";
+    src: url(../fonts/roboto-regular-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ===========================FONT ENDS =========================*/
 
 body {
     min-height: 100vh;
@@ -32,13 +29,14 @@ nav {
     width: 60px;
     height: 100%;
     background: var(--bg-secondary);
-    transition: .5s;
+    transition: 0.5s;
     overflow: hidden;
 }
 
 nav.active {
     width: 300px;
 }
+
 
 /* nav:hover {
     width: 300px;
@@ -55,7 +53,6 @@ nav ul li {
     list-style: none;
     width: 100%;
     position: relative;
-
 }
 
 nav ul li a:hover {
@@ -75,7 +72,7 @@ nav ul li a {
     align-items: center;
     text-decoration: none;
     color: var(--cl-text);
-    transition: .2s;
+    transition: 0.2s;
 }
 
 nav ul li a::before {
@@ -85,7 +82,7 @@ nav ul li a::before {
     left: 0;
     width: 0;
     height: 100%;
-    transition: .2s;
+    transition: 0.2s;
 }
 
 nav ul li a .icon {
@@ -93,13 +90,13 @@ nav ul li a .icon {
     display: block;
     min-width: 60px;
     height: 60px;
-    line-height: 60px;
+    /* line-height: 15px; */
     text-align: center;
 }
 
 nav ul li a .title {
     position: relative;
-    font-size: .85em;
+    font-size: 0.85em;
 }
 
 nav ul li a .icon * {
@@ -127,20 +124,16 @@ header {
         background: var(--bg-secondary);
         color: var(--cl-text);
     }
-
     header a {
-        color: var(--cl-text)
+        color: var(--cl-text);
     }
-
     nav {
         left: -60px;
     }
-
     nav.active {
         left: 0;
         width: 100%;
     }
-
     nav ul li a.toggle {
         display: none;
     }
@@ -151,10 +144,6 @@ header {
     --bg-secondary: #52575d;
     --bg-active: #fddb3a;
     --cl-text: #f6f4e6;
-}
-
-#menu {
-    display: none;
 }
 
 .box1 {
@@ -205,7 +194,6 @@ img:hover {
 
 .word p {
     margin-left: 16%;
-
 }
 
 .search {
@@ -217,53 +205,49 @@ img:hover {
     width: 10%;
 }
 
-@media (max-width:1160px) {
+@media (max-width: 1160px) {
     .num1 h6 {
-
         display: none;
     }
 }
 
-@media (max-width:1134px) {
-
+@media (max-width: 1134px) {
     .icon1,
     .hot,
     .word {
         display: none;
     }
-
     .box1 {
         line-height: 55px;
     }
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .box1 i {
         line-height: 82px;
-
     }
     .icon1,
     .hot,
-    .word, .type, .center{
+    .word,
+    .type,
+    .center {
         display: none;
     }
-    .center{
+    .center {
         margin: auto;
     }
     .imm .ico {
-       
         color: blue;
-       
     }
 }
 
-@media (max-width:946px) {
+@media (max-width: 946px) {
     .type {
         display: none;
     }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .imm .ico {
         font-size: 40px;
         text-align: center;
